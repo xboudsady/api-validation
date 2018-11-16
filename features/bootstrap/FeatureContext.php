@@ -20,4 +20,28 @@ class FeatureContext implements Context
     {
     }
 
+    /**
+     * @Given I am an anonymous user
+     */
+    public function iAmAnAnonymousUser()
+    {
+        return true;
+    }
+
+    /**
+     * @When I search for Behat
+     */
+    public function iSearchForBehat()
+    {
+        throw new Exception();
+    }
+
+    /**
+     * @Then I get a result
+     */
+    public function iGetAResult()
+    {
+        throw new Exception();
+    }
+
 }
